@@ -1,0 +1,677 @@
+/*Общие стили*/
+.block {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+/*Заголовок основной страницы*/
+.text-title {
+    margin: 100px auto 0;
+}
+
+.block_with_background {
+    background-color: #B6DFF3;
+    padding: 10px 20px;
+    margin: 20px 60px;
+}
+
+.text {
+    font-family: "Open Sans-Bold", Helvetica, serif;
+    color: #283a97;
+    line-height: normal;
+    letter-spacing: 0;
+    word-spacing: -2px;
+    text-decoration: none;
+}
+
+.text-15 {
+    font-size: 15px;
+}
+
+.text-17 {
+    font-size: 17px;
+}
+
+.text-20 {
+    font-size: 20px;
+}
+
+.text-600 {
+    font-weight: 600;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_justify {
+    text-align: justify;
+}
+
+.text_left {
+    text-align: left;
+}
+
+.margin_text {
+    margin: 20px 60px;
+}
+
+.text-line-white:after {
+    content: "";
+    display: block;
+    border-radius: 30px;
+    margin: 10px auto 5%;
+    width: 330px;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+.text-line-blue:after {
+    content: "";
+    display: block;
+    border-radius: 30px;
+    margin: 10px auto 5%;
+    width: 330px;
+    height: 3px;
+    background-color: #B6DFF3;
+}
+
+.title-line:after {
+    content: "";
+    display: block;
+    margin: 20px auto 25px;
+    width: 500px;
+    height: 5px;
+    background-color: #B6DFF3;
+}
+
+/*Блок 1. КОРПОРАТИВНАЯ КУЛЬТУРА*/
+
+/* Контейнер div для выпадающего содержимого */
+.dropdown {
+    position: fixed;
+    left: auto;
+    right: 5.5em;
+    top: 225px;
+    bottom: auto;
+    display: inline-block;
+    float: right;
+    z-index: 1;
+}
+
+/* Кнопка выпадающего списка */
+.dropbtn {
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-color: #00aeef;
+    box-shadow: 0 4px 4px #00000040;
+}
+
+/* настройки плавающего блока */
+.float-block {
+    position: absolute;
+    top: 225px;
+    right: 5.5em;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.dropbtn:hover {
+    background-color: #2980B9;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 300px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    right: 0;
+    padding: 5px 0 5px 0;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+    color: #283a97;
+    padding: 10px 0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: "Open Sans-SemiBold", Helvetica, serif;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Показать выпадающее меню */
+.show {
+    display: block;
+}
+
+/*Линии в кнопке*/
+.line_in_button-1 {
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 5px;
+    top: 6px;
+    pointer-events: none;
+}
+
+.line_in_button-2 {
+    position: absolute;
+    top: 9px;
+    width: 10px;
+    height: 2px;
+    left: 5px;
+    pointer-events: none;
+}
+
+.line_in_button-3 {
+    position: absolute;
+    top: 12px;
+    width: 10px;
+    height: 2px;
+    left: 5px;
+    pointer-events: none;
+}
+
+/*Линия под пунктами в меню*/
+.line-menu {
+    margin: 0 auto;
+    width: 150px;
+    height: 3px;
+    background-color: #B6DFF3;
+}
+
+/*Текст ниже основного в первом блоке*/
+.down-text {
+    margin-top: 20px;
+}
+
+/*Фото в первом блоке*/
+.photo {
+    display: block;
+    margin: 0 auto 20px;
+    background-size: contain;
+    background: no-repeat;
+    width: 45%;
+    height: auto;
+}
+
+/*Блок 2. МИССИЯ КОМПАНИИ*/
+
+/*Текс меньше заголовка, но больше основного*/
+.mini-title {
+    padding: 0 0 10px 0;
+    margin: 0 60px;
+}
+
+/*Блок 3. ЦЕННОСТИ КОМПАНИИ*/
+
+/*Таблица с фоном. 3-й блок*/
+.block_with_background_block-3 {
+    background-color: #B6DFF3;
+    margin: 0 60px;
+    padding: 0 7% 0 0;
+}
+
+/*Таблица без фона. 3-й блок*/
+.block_without_background {
+    padding: 0 0 0 10%;
+}
+
+/*Div со всем правым текстом 3-й блок */
+.text-block_3_right {
+    margin: 0 10% 0 0;
+    width: 80%;
+    float: right;
+}
+
+/*Основной текст. Блок 3*/
+.text_3 {
+    padding: 10px 10%;
+    line-height: 1.5;
+}
+
+.photo_3 {
+    width: 300px;
+    height: 424px;
+    display: block;
+    padding: 20px 0 20px 0;
+    background: no-repeat;
+}
+
+/*Блок 4. СТРАГЕГИЯ РАЗВИТИЯ*/
+
+/*Обёртка для блока 4*/
+.content-wrapper_block_4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.photo_4 {
+    width: 150px;
+    height: 120px;
+    display: block;
+    border: none;
+}
+
+/*Блок для текста блок 4*/
+.text-block_4 {
+    width: 55%;
+}
+
+/*Обёртка с границами для блока 4*/
+.content-wrapper_border_block_4 {
+    border: 3px solid #B6DFF3;
+}
+
+/*Блок 5. КОРПОРАТИВНЫЕ КОМПЕТЕНЦИИ*/
+
+/*Текст с фоном ниже главного заголовка. Блок 5*/
+.mini-title_5 {
+    margin: 0 60px 40px 60px;
+    padding: 20px 20px;
+}
+
+/*Белый текст с фоном*/
+.mini-title_5_2 {
+    background-color: #63C0E2;
+    margin: 0 60px 20px 60px;
+    padding: 20px 20px;
+    color: #ffffff;
+}
+
+/*Div c ссылкой и текстом блок 5*/
+.link_zone {
+    position: relative;
+    text-align: center;
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+}
+
+/*Голубой квадратик перед ссылкой*/
+.square {
+    width: 13px;
+    height: 13px;
+    margin: 0 0 0 80px;
+    background-color: #00AEEF;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/*Текст ссылок блок 5*/
+.link_text_5 {
+    margin: 0 0 0 95px;
+    text-decoration-line: none;
+    width: 350px;
+}
+
+/*Голубая стрелочка*/
+.arrow {
+    display: block;
+    margin: 0 auto;
+}
+
+/*Текст в голубой рамке (описание компетенции)*/
+.text_5 {
+    margin: 0;
+    padding: 2px 5px;
+}
+
+/*Рамка для текста описания компетенции*/
+.border {
+    margin: 0 60px 0 0;
+    float: right;
+    width: 450px;
+    min-width: 450px;
+    min-height: 60px;
+    border: 2px solid #00AEEF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Заголовок таблицы с фиолетовой границей*/
+.core_competencies {
+    margin: 20px 0 20px 60px;
+}
+
+/*Фиолетовая граница основных компетенций*/
+.border_5 {
+    border: 3px solid #283A97;
+    border-radius: 5px;
+    margin: 0 60px;
+}
+
+/*Div c ссылкой и текстом . основные компетенции*/
+.link_zone_5 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.square_block_5 {
+    width: 13px;
+    height: 13px;
+    margin: 0 0 0 12px;
+    background-color: #00AEEF;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.link_5 {
+    margin: 0 0 0 27px;
+    text-decoration-line: none;
+    width: 350px;
+}
+
+/*Голубая стрелочка блок основные компетенции*/
+.arrow_block_5 {
+    display: block;
+    margin: 0 auto;
+}
+
+/*Голубая рамка для текста описания основных компетенций , блок 5*/
+.border_block_5 {
+    float: right;
+    width: 450px;
+    min-width: 450px;
+    min-height: 60px;
+    border: 2px solid #00AEEF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Текст со звездочкой в 5 блоке*/
+.down-text_block_5 {
+    margin: 10px 0 50px 60px;
+}
+
+/*Блок 6. ОСНОВНЫЕ КОМПЕТЕНЦИИ*/
+
+.mini-title_6 {
+    margin: 40px 60px 20px 60px;
+    padding: 20px 20px;
+}
+
+/*Фото основных компетенций и Лидерство*/
+.photo_6 {
+    display: block;
+    margin: auto;
+    background-size: contain;
+    background: no-repeat;
+    width: 30%;
+    height: auto;
+}
+
+/*Фото таблиц ЗКА и ЗКО*/
+.photo_6_long {
+    display: block;
+    margin: 20px auto 10px;
+    background-size: contain;
+    background: no-repeat;
+    width: calc(100% - 120px);
+    height: auto;
+    cursor: pointer;
+}
+
+.text_link {
+    margin: 0 0 50px;
+}
+
+.formula_block_6 {
+    display: flex;
+    margin: 20px auto;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.photo_formula {
+    display: block;
+    background-size: cover;
+    background: no-repeat;
+    width: 40%;
+    height: auto;
+}
+
+.formula_text_div {
+    width: 45%;
+}
+
+.formula_text {
+    text-align: left;
+    font-size: 15px;
+    font-weight: normal;
+    color: #283A97;
+    font-family: "Open Sans", Helvetica, serif;
+    margin: 0;
+    word-wrap: normal;
+}
+
+/*Блок для того, чтобы сделать линию под картинкой*/
+.image-container {
+    position: relative;
+    margin: 0 auto;
+}
+
+/*Линия под картинкой*/
+.image-container::after {
+    content: "";
+    display: block;
+    margin: 50px auto 50px;
+    width: 500px;
+    height: 5px;
+    background-color: #B6DFF3;
+}
+
+/*Описание определений таблицы ЗКО Блок 6*/
+.text-6 {
+    padding: 40px 20px
+}
+
+/*Фото в разделе "Основные компетенции" и таблица Декомпозиции*/
+.photo_6-2 {
+    display: block;
+    margin: 20px auto 50px;
+    background-size: contain;
+    background: no-repeat;
+    width: 60%;
+    height: auto;
+}
+
+/*Контейнер для блока амбиций*/
+.content-wrapper_block_6 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px 20px;
+    list-style-position: inside;
+}
+
+/*Блок со списком*/
+.reversed-list {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 0;
+    margin: 0;
+}
+
+/*Заголовки списков с границами Блок 6*/
+.list-title_block_6 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.border_list {
+    overflow: auto;
+    box-sizing: border-box;
+    border: 2px solid #283A97;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+}
+
+.list {
+    line-height: 1.5;
+    height: 300px;
+    margin: 0;
+    padding: 0 0 0 20px;
+    text-indent: -17px;
+}
+
+/*Контейнер для блока с кнопками*/
+.button_container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 0 60px 40px;
+}
+
+/*Блок для каждой кнопки*/
+.button_div {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 45%;
+}
+
+/*Сама кнопка*/
+.button_for_picture_block_6 {
+    background-color: #00C2F3;
+    border: 2px solid #00C2F3;
+    border-radius: 50px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    color: white;
+    padding: 10px 40px;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.button_for_picture_block_6:hover {
+    background-color: #ffffff;
+    color: #00C2F3;
+}
+
+/*Блок 7 ДЕКОМПОЗИЦИЯ*/
+
+.text-7 {
+    margin: 0 60px 40px;
+}
+
+.photo_7 {
+    margin: 20px auto;
+}
+
+/*Блок 8 ЛИДЕРСТВО*/
+
+.text_with_background_block_8 {
+    padding: 10px 35px 15px;
+}
+
+/*Треугольник перед абзацами блок 8*/
+.triangle {
+    position: absolute;
+    left: 75px;
+    color: #283A97;
+}
+
+.div-text_block-8 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*Блок 9 ДЕЛЕГИРОВАНИЕ*/
+
+.photo_9 {
+    display: block;
+    margin: 20px auto 20px;
+    background-size: contain;
+    background: no-repeat;
+    width: 60%;
+    align-self: center;
+}
+
+/*Контейнер для блока с кнопками*/
+.button_container_9 {
+    margin: 30px 60px;
+}
+
+/*Блок для каждой кнопки*/
+.button_div_9 {
+    margin: 0 auto;
+    width: auto;
+}
+
+.list_div_block_9 {
+    margin: 0 60px 20px;
+    display: flex;
+    align-content: center;
+    background-color: #B6DFF3;
+}
+
+.list_block_9 {
+    margin: 0 auto;
+    padding: 20px 140px 20px;
+}
+
+.point {
+    margin-top: 20px;
+}
+
+/*Блок 10 ГРЕЙДЫ*/
+
+.photo_10 {
+    display: block;
+    margin: 20px auto 10px;
+    background-size: contain;
+    background: no-repeat;
+    width: 80%;
+    align-self: center;
+}
+
+.div_with_background {
+    background-color: #B6DFF3;
+    margin: 20px 60px 40px;
+    padding: 10px 0;
+}
+
+.border_for_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 90px 60px 20px;
+    border: 6px solid #B6DFF3;
+    padding: 10px 0 20px;
+}

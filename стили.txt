@@ -1,0 +1,747 @@
+    <!--Стили
+
+    <style>
+        /*Основной блок с контентом*/
+.bloсk {
+    position: relative;
+    weight: 100%;
+    height: auto;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+    position: fixed;
+    left: auto;
+    right: 5.5em;
+    top: auto;
+    bottom: auto;
+    display: inline-block;
+    float: right;
+    z-index: 1;
+}
+
+/* Кнопка выпадающего списка */
+.dropbtn {
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-color: #00aeef;
+    box-shadow: 0 4px 4px #00000040;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /*z-index: 1;*/
+    right: 0;
+    padding: 10px 0 20px 0;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+    color: #283a97;
+    padding: 12px 0px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Open Sans-SemiBold", Helvetica, serif;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.dropbtn:hover {
+    background-color: #2980B9;
+}
+
+/* Показать выпадающее меню */
+.show {
+    display: block;
+}
+
+/*Линии в кнопке*/
+.line-1 {
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 5px;
+    top: 6px;
+    pointer-events: none;
+}
+
+.line-2 {
+    position: absolute;
+    top: 9px;
+    width: 10px;
+    height: 2px;
+    left: 5px;
+    pointer-events: none;
+}
+
+.line-3 {
+    position: absolute;
+    top: 12px;
+    width: 10px;
+    height: 2px;
+    left: 5px;
+    pointer-events: none;
+}
+
+/*Линия под пунктами в меню*/
+.line-menu {
+    margin: 0 auto;
+    width: 150px;
+    height: 3px;
+    background-color: #B6DFF3;
+}
+
+/*Заголовок основной страницы*/
+.text-title {
+    position: relative;
+    font-family: "Open Sans-SemiBold", Helvetica, serif;
+    font-weight: 600;
+    color: #283a97;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    margin: 100px auto 0;
+}
+
+.text-title:after {
+    content: "";
+    display: block;
+    margin: 10px auto 25px;
+    width: 500px;
+    height: 5px;
+    background-color: #B6DFF3;
+}
+
+/*Основной текст на главной странице*/
+.text {
+    margin: 0 60px 20px 60px;
+    padding: 10px 20px;
+    background-color: #B6DFF3;
+    position: relative;
+    font-family: "Open Sans-Bold", Helvetica, serif;
+    font-weight: 400;
+    color: #283a97;
+    font-size: 15px;
+    word-spacing: -2px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+/*Текст ниже основного в первом блоке*/
+.down-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*Фото в первом блоке*/
+.photo {
+    display: block;
+    margin: 0 auto 20px;
+    background-size: contain;
+    background: no-repeat;
+    width: 45%;
+    height: auto;
+}
+
+/*Текс меньше заголовка, но больше основного*/
+.mini-title {
+    font-family: "Open Sans-SemiBold", Helvetica, serif;
+    font-weight: 600;
+    color: #283a97;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: normal;
+    padding: 0 30px 25px 30px;
+    margin: 0 auto;
+}
+
+/*Таблица с фоном. 3-й блок*/
+.with_background {
+    background-color: #B6DFF3;
+    margin: 0 60px;
+    padding: 0 7% 0 0;
+}
+
+/*Таблица без фона. 3-й блок*/
+.without_background {
+    padding: 0 0 0 10%;
+}
+
+/*Div со всем правым текстом 3-й блок */
+.text-block_3_right {
+    margin: 0 10% 0 0;
+    width: 80%;
+    float: right;
+}
+
+/*Линия под заголовком блока 3 белая*/
+.line-white {
+    border-radius: 30px;
+    margin: 0 auto 5%;
+    width: 350px;
+    height: 5px;
+    background-color: #ffffff;
+}
+
+/*Линия под заголовком блока 3 голубая*/
+.line-blue {
+    border-radius: 30px;
+    margin: 0 auto 5%;
+    width: 350px;
+    height: 5px;
+    background-color: #B6DFF3;
+}
+
+/*Основной текст с выравниванием справа. Блок 3*/
+.text_3_right {
+    margin: 0;
+    padding: 10px 10%;
+    text-align: center;
+    line-height: 1.5;
+    background-color: #ffffff;
+}
+
+/*Основной текст с выравниванием слева. Блок 3*/
+.text_3 {
+    margin: 0;
+    padding: 10px 10%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.photo_right_3 {
+    width: 300px;
+    height: 424px;
+    display: block;
+    padding: 20px 0 20px 0;
+    background: no-repeat;
+}
+
+.photo_left_3 {
+    width: 300px;
+    height: 424px;
+    display: block;
+    margin: 20px 0 20px 0;
+    background: no-repeat;
+}
+
+/*Обёртка для блока 4*/
+.content-wrapper_block_4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.photo_left_4 {
+    width: 150px;
+    height: 120px;
+    display: block;
+    border: none;
+}
+
+.text-block_4 {
+    width: 55%;
+}
+
+.text_4 {
+    padding: 0;
+    font-family: "Open Sans-Bold", Helvetica, serif;
+    font-weight: 400;
+    color: #283a97;
+    font-size: 15px;
+    word-spacing: -2px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.content-wrapper_border_block_4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 3px solid #B6DFF3;
+}
+
+.photo_right_4 {
+    width: 150px;
+    height: 120px;
+    display: block;
+    border: none;
+}
+
+/*Блок 5*/
+
+/*Текст ниже главного заголовка. Блок 5*/
+.mini-title_5 {
+    background-color: #B6DFF3;
+    margin: 0 60px 40px 60px;
+    padding: 20px 20px;
+}
+
+.mini-title_5_2 {
+    background-color: #63C0E2;
+    margin: 0 60px 20px 60px;
+    padding: 20px 20px;
+    color: #ffffff;
+}
+
+/*Div c ссылкой и текстом блок 5*/
+.link_zone {
+    position: relative;
+    text-align: center;
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+    /*background-color: #866cb2;*/
+}
+
+/*Голубой квадратик перед ссылкой*/
+.square {
+    width: 13px;
+    height: 13px;
+    margin: 0 0 0 80px;
+    background-color: #00AEEF;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/*Текст ссылок блок 5*/
+.link_text_5 {
+    margin: 0 0 0 95px;
+    font-family: "Open Sans", Helvetica, serif;
+    font-weight: 400;
+    color: #283A97;
+    font-size: 15px;
+    word-spacing: -2px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-decoration-line: none;
+    text-align: left;
+    width: 350px;
+}
+
+/*Голубая стрелочка*/
+.arrow {
+    display: block;
+    margin: 0 auto;
+}
+
+/*Текст в рамке*/
+.text_5 {
+    margin: 0;
+    padding: 2px 5px;
+    font-family: "Open Sans", Helvetica, serif;
+    font-weight: 400;
+    color: #283A97;
+    font-size: 15px;
+    word-spacing: -2px;
+    text-align: left;
+    word-wrap: normal;
+}
+
+/*Рамка для текста описания компетенции*/
+.border {
+    margin: 0 60px 0 0;
+    float: right;
+    width: 450px;
+    min-width: 450px;
+    border: 2px solid #00AEEF;
+    border-radius: 5px;
+}
+
+/*Заголовок блока 5*/
+.core_competencies {
+    position: relative;
+    font-family: "Open Sans-SemiBold", Helvetica, serif;
+    font-weight: 600;
+    color: #283a97;
+    font-size: 17px;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: normal;
+    margin: 20px 0 20px 60px;
+}
+
+/*Граница для основных компетенций 6-го блока*/
+.border_5 {
+    border: 3px solid #283A97;
+    border-radius: 5px;
+    margin: 0 60px;
+}
+
+/*Div c ссылкой и текстом блок 6*/
+.link_zone_5 {
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.square_block_5 {
+    width: 13px;
+    height: 13px;
+    margin: 0 0 0 12px;
+    background-color: #00AEEF;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.link_5 {
+    margin: 0 0 0 27px;
+    font-family: "Open Sans", Helvetica, serif;
+    font-weight: 400;
+    color: #283A97;
+    font-size: 15px;
+    word-spacing: -2px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-decoration-line: none;
+    text-align: left;
+    width: 350px;
+}
+
+/*Голубая стрелочка блок 6*/
+.arrow_block_5 {
+    display: block;
+    margin: 0 auto;
+}
+
+/*Рамка для текста описания основных компетенций , блок 6*/
+.border_block_5 {
+    float: right;
+    width: 450px;
+    min-width: 450px;
+    border: 2px solid #00AEEF;
+    border-radius: 5px;
+}
+
+/*Текст со звездочкой в 6 блоке*/
+.down-text_block_5 {
+    text-align: left;
+    font-size: 16px;
+    color: #283A97;
+    margin: 10px 0 50px 60px;
+}
+
+/*Блок для того, чтобы сделать линию под картинкой*/
+.image-container {
+    position: relative;
+    margin: 0 auto;
+}
+
+/*Линия под картинкой*/
+.image-container::after {
+    content: "";
+    display: block;
+    margin: 50px auto 50px;
+    width: 500px;
+    height: 5px;
+    background-color: #B6DFF3;
+}
+
+/*Фото в 5-м блоке*/
+.photo_5 {
+    display: block;
+    margin: 20px auto 50px;
+    background-size: contain;
+    background: no-repeat;
+    width: 60%;
+    height: auto;
+    align-self: center;
+}
+
+/*Контейнер для блока амбиций*/
+.content-wrapper_block_5 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px 20px;
+    /*background-color: #fddb92;*/
+    overflow: hidden;
+    list-style-position: inside;
+}
+
+/*Блок со списком*/
+.reversed-list {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 0;
+    margin: 0;
+}
+
+.list-title {
+    font-family: "Open Sans-SemiBold", Helvetica, serif;
+    font-weight: 600;
+    color: #283a97;
+    font-size: 17px;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.border_list {
+    box-sizing: border-box;
+    border: 2px solid #283A97;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+}
+
+.list {
+    font-family: "Open Sans-SemiBold", Helvetica, serif;
+    font-weight: 400;
+    color: #283a97;
+    font-size: 15px;
+    text-align: left;
+    line-height: 1.5;
+    white-space: normal;
+    height: 300px;
+    margin: 0;
+    padding: 10px 0 0 20px;
+    text-transform: uppercase;
+    text-indent: -17px;
+}
+
+/*Контейнер для блока с кнопками*/
+.button_container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 0 60px 40px;
+}
+
+/*Блок для каждой кнопки*/
+.button_div {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 45%;
+}
+
+/*Сама кнопка*/
+.button_for_picture_block_5 {
+    background-color: #00C2F3;
+    border: 2px solid #00C2F3;
+    border-radius: 50px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.button_for_picture_block_5:hover {
+    background-color: #ffffff;
+    color: #00C2F3;
+}
+
+.mini-title_with_line_block_5 {
+    font-family: "Open Sans-SemiBold", Helvetica, serif;
+    font-weight: 600;
+    color: #283a97;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: normal;
+    margin: 0 60px;
+}
+
+/*Линия под текстом блок 5*/
+.mini-title_with_line_block_5::after {
+    content: "";
+    display: block;
+    margin: 40px auto 40px;
+    width: 700px;
+    height: 5px;
+    background-color: #B6DFF3;
+}
+
+.simple_text {
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    color: #283A97;
+    font-family: "Open Sans", Helvetica, serif;
+    margin: 20px 60px;
+    word-wrap: normal;
+}
+
+/*Блок 6*/
+
+.mini-title_6 {
+    background-color: #B6DFF3;
+    margin: 40px 60px 20px 60px;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.photo_6 {
+    display: block;
+    margin: auto;
+    background-size: contain;
+    background: no-repeat;
+    width: 35%;
+    height: auto;
+
+border: 1px solid black;
+}
+
+.simple_text_uppercase {
+    text-align: center;
+    font-size: 17px;
+    font-weight: normal;
+    color: #283A97;
+    font-family: "Open Sans", Helvetica, serif;
+    margin: 20px 60px;
+    text-transform: uppercase;
+}
+
+.photo_6_long {
+    display: block;
+    margin: 20px auto 10px;
+    background-size: contain;
+    background: no-repeat;
+    width: calc(100% - 120px);
+    height: auto;
+    cursor: pointer;
+}
+
+.simple_text_link {
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    color: #283A97;
+    font-family: "Open Sans", Helvetica, serif;
+    margin: 0 0 50px;
+    text-decoration: none;
+}
+
+.text_with_background_block_6 {
+    background-color: #B6DFF3;
+    margin: 0 60px;
+    padding: 10px 10px 15px;
+}
+
+.simple_text_with_background {
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    color: #283A97;
+    font-family: "Open Sans", Helvetica, serif;
+    word-spacing: -2px;
+    letter-spacing: 0;
+    line-height: normal;
+    background-color: #B6DFF3;
+}
+
+.formula_block_6 {
+    display: flex;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.photo_formula {
+    display: block;
+    background-size: cover;
+    background: no-repeat;
+    width: 40%;
+    height: auto;
+}
+
+.formula_text_div {
+    width: 45%;
+}
+
+.formula_text {
+    text-align: left;
+    font-size: 15px;
+    font-weight: normal;
+    color: #283A97;
+    font-family: "Open Sans", Helvetica, serif;
+    margin: 0;
+    word-wrap: normal;
+}
+
+/*Блок 7*/
+
+.text_with_background_block_7 {
+    background-color: #B6DFF3;
+    margin: 0 60px;
+    padding: 10px 35px 15px;
+}
+
+.triangle {
+    position: absolute;
+    left: 75px;
+    color: #283A97;
+}
+
+/* Контейнер для блока видео. Блок 8 */
+.content-wrapper_block_8 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px 20px;
+    height: auto;
+}
+
+.list-title {
+    font-family: "Open Sans-SemiBold", Helvetica, serif;
+    font-weight: 600;
+    color: #283a97;
+    font-size: 17px;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.border_video {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+}
+    </style>-->
